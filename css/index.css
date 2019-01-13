@@ -51,7 +51,7 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html, body, a {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -74,7 +74,7 @@ p {
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 header nav a {
@@ -87,10 +87,22 @@ header nav a {
 }
 
 .image-container {
-    margin: 20px;
+    margin: 20px 0;
     width: 800px;
     background-image: url(../img/jumbo.jpg);
     height: 150px;
+}
+
+.about-image-container {
+    margin: 20px 0;
+    width: 800px;
+    background-image: url(../img/jumbo-about.png);
+    height: 150px;
+}
+
+.about-text-container {
+    margin: 20px 0;
+    width: 800px;
 }
 
 .top-content {
@@ -107,6 +119,39 @@ header nav a {
     padding-bottom: 20px;  
 }
 
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.about-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed black;
+}
+
+.about-content .text-container h2 {
+    margin: 10px 0;
+}
+
+.about-content .text-container p {
+    margin: 10px 0;
+    padding-bottom: 20px;
+}
+
+.about-content .text-container a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -114,6 +159,12 @@ header nav a {
 
 .middle-content h2 {
     padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content p {
+    padding: 0 2%;
+    margin-top: 20px;
     margin-bottom: 0;
 }
 
