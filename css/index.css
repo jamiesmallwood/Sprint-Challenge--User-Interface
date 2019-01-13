@@ -86,6 +86,13 @@ header nav a {
     margin-top: 26px;
 }
 
+.image-container {
+    margin: 20px;
+    width: 800px;
+    background-image: url(../img/jumbo.jpg);
+    height: 150px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
